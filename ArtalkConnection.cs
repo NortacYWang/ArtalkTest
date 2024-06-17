@@ -14,8 +14,8 @@ namespace ArtalkTest
         {
             _client = new ArtalkXmppClient(hostname, username, password);
             
-            _client.FileTransferSettings.ForceInBandBytestreams = true;
-            _client.FileTransferSettings.UseUPnP = true;
+            //_client.FileTransferSettings.ForceInBandBytestreams = true;
+            //_client.FileTransferSettings.UseUPnP = true;
 
             _client.Message += OnNewMessage;
             _client.SubscriptionRequest = OnSubscriptionRequest;

@@ -93,7 +93,7 @@ namespace artalkTest
 
                         break;
                     case "7":
-                        List<string> features = artalkConnection.getFeatures(artalkConnection.getOwnJid());
+                        List<string> features = artalkConnection.getFeatures(contacts.FirstOrDefault().Jid);
 
                         features.ForEach(feature => Console.WriteLine(" feature>> " + feature));
 
